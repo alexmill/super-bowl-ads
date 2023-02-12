@@ -21,10 +21,10 @@ IMAGE_ID=$(docker image ls | grep superbowl | awk '{print $3}')
 docker run \
   --volume $(pwd):/home/jovyan \
   --publish 8887:8888 \
-  --network host \ 
-  $IMAGE_ID
+  --network host\
+    $IMAGE_ID
 ```
-- Roll your own: If your system has `pandas` and `matplotlib` installed, you should be able to execute the notebook. 
+- Roll your own: If your system has `pandas`, `lxml`, and `matplotlib` installed, you should be able to execute the notebook. 
 
 
 
