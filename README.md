@@ -20,11 +20,11 @@ IMAGE_ID=$(docker image ls | grep superbowl | awk '{print $3}')
 ```bash
 docker run \
   --volume $(pwd):/home/jovyan \
-  --publish 8887:8888 \
-  --network host\
+  --publish 8888:8888 \
     $IMAGE_ID
 ```
 - Roll your own: If your system has `pandas`, `lxml`, and `matplotlib` installed, you should be able to execute the notebook. 
 
+![super-bowl-ads-pricing-data-through-2022](./super-bowl-ads-thru-2022.png)
 
 
